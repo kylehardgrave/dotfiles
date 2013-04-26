@@ -1,5 +1,5 @@
 # Helpful aliases
-alias ls="ls -G"
+alias ls="ls --color=always"
 alias l="ls"
 alias ll="l -l"
 alias la="l -a"
@@ -10,6 +10,11 @@ alias cleanup="rm *~"
 # Git Completion
 if [ -e ~/.git-completion.sh ]; then
 		source ~/.git-completion.sh
+fi
+
+# RVM
+if [ -e ~/.rvm/scripts/rvm ]; then
+    source ~/.rvm/scripts/rvm
 fi
 
 # Put secret configuration settings in ~/.secrets
