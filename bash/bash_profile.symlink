@@ -19,14 +19,14 @@ if [ -e ~/.secrets ]; then
     source ~/.secrets
 fi
 
+#export EDITOR=/Applications/Emacs.app/Contents/MacOS/Emacs
+alias emacs=/Applications/Emacs.app/Contents/MacOS/Emacs
+export EDITOR=emacs
+
 # Go: Combines cd and ls for directories, or opens files in EMACS.
 g() {
     cd $1 2> /dev/null && ls || $EDITOR $1
 }
-
-#export EDITOR=/Applications/Emacs.app/Contents/MacOS/Emacs
-alias emacs=/Applications/Emacs.app/Contents/MacOS/Emacs
-export EDITOR=emacs
 
 
 # Set permissions for a web directory
@@ -84,10 +84,14 @@ function listprinters() {
 
 # Setting PATH for Python 2.7
 export PYTHONPATH="/usr/local/lib/python2.7/site-packages:/Applications/GoogleAppEngineLauncher.app/Contents/Resources/GoogleAppEngine-default.bundle/Contents/Resources/google_appengine/lib/yaml/lib:/Applications/GoogleAppEngineLauncher.app/Contents/Resources/GoogleAppEngine-default.bundle/Contents/Resources/google_appengine:/Applications/GoogleAppEngineLauncher.app/Contents/Resources/GoogleAppEngine-default.bundle/Contents/Resources/google_appengine/lib/django_1_3:${PYTHONPATH}"
-export GOPATH="${HOME}/projects/golang"
+export GOPATH="${HOME}/gocode"
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 PATH="${GOPTATH}/bin:${PATH}"
 PATH="${HOME}/.cabal/bin:${HOME}/Library/Haskell/bin:${PATH}"
+
+# Medium scripts
+PATH="~/.internal-scripts:${PATH}"
+
 export PATH
 
 # Customize prompt
