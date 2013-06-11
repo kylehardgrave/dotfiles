@@ -90,7 +90,7 @@ PATH="${GOPTATH}/bin:${PATH}"
 PATH="${HOME}/.cabal/bin:${HOME}/Library/Haskell/bin:${PATH}"
 
 # Medium scripts
-PATH="~/.internal-scripts:${PATH}"
+PATH="~/.internal/scripts:${PATH}"
 
 export PATH
 
