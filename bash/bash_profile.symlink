@@ -91,6 +91,7 @@ PATH="${HOME}/.cabal/bin:${HOME}/Library/Haskell/bin:${PATH}"
 
 # Medium scripts
 PATH="~/.internal/scripts:${PATH}"
+PATH="~/.phabricator/arcanist/bin:${PATH}"
 
 export PATH
 
