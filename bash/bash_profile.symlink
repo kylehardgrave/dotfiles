@@ -9,6 +9,9 @@ alias cleanup="rm *~"
 alias runmysql="sudo /usr/local/mysql/bin/mysqld_safe"
 alias untar="tar -xzvf"
 
+alias bigwindow="printf '\e[8;80;80;t'"
+alias smallwindow="printf '\e[8;46;80;t'"
+
 # Git Completion
 if [ -e ~/.git-completion.sh ]; then
     source ~/.git-completion.sh
