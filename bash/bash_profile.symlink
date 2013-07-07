@@ -23,7 +23,7 @@ if [ -e ~/.secrets ]; then
 fi
 
 #export EDITOR=/Applications/Emacs.app/Contents/MacOS/Emacs
-#alias emacs=/Applications/Emacs.app/Contents/MacOS/Emacs
+alias em=/Applications/Emacs.app/Contents/MacOS/Emacs
 export EDITOR=emacs
 
 # Go: Combines cd and ls for directories, or opens files in EMACS.
