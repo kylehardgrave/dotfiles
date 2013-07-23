@@ -10,6 +10,7 @@ alias runmysql="sudo /usr/local/mysql/bin/mysqld_safe"
 alias untar="tar -xzvf"
 
 alias bigwindow="printf '\e[8;80;80;t'"
+alias widewindow="printf '\e[8;80;200;t'"
 alias smallwindow="printf '\e[8;46;80;t'"
 
 # Git Completion
@@ -94,6 +95,7 @@ PATH="${HOME}/.cabal/bin:${HOME}/Library/Haskell/bin:${PATH}"
 
 # Medium scripts
 PATH="/usr/local/bin:${PATH}"
+PATH="/usr/local/opt/ruby/bin:${PATH}"
 PATH="~/.internal/scripts:${PATH}"
 PATH="~/.phabricator/arcanist/bin:${PATH}"
 
