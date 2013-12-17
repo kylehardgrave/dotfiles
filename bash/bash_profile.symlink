@@ -11,7 +11,7 @@ alias untar="tar -xzvf"
 
 # Git Completion
 if [ -e ~/.git-completion.sh ]; then
-		source ~/.git-completion.sh
+    source ~/.git-completion.sh
 fi
 
 # RVM
@@ -36,16 +36,16 @@ export EDITOR=emacs
 
 # Set permissions for a web directory
 webify_permissions() {
-		for i in $(ls $1); do
-				if [ -d $i ]; then
-						chmod 755 $i
-						echo "Setting directory $i to 755"
-						webify_permissions $i
-				else
-						chmod 644 $i
-						echo "Setting file $i to 644"
-				fi
-		done
+    for i in $(ls $1); do
+        if [ -d $i ]; then
+            chmod 755 $i
+            echo "Setting directory $i to 755"
+            webify_permissions $i
+        else
+            chmod 644 $i
+            echo "Setting file $i to 644"
+        fi
+    done
 }
 
 
@@ -93,6 +93,7 @@ export GOPATH="${HOME}/projects/golang"
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 PATH="${GOPTATH}/bin:${PATH}"
 PATH="${HOME}/.cabal/bin:${HOME}/Library/Haskell/bin:${PATH}"
+PATH="/usr/local/share/npm/bin:${PATH}"
 export PATH
 
 # Customize prompt
