@@ -98,3 +98,5 @@ export PATH
 
 # Customize prompt
 source ~/.bash_prompt
+
+[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh # This loads NVM
