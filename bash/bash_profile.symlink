@@ -51,5 +51,8 @@ fi
 # Postgres
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin"
 
+# Spark
+export PATH="$PATH:/usr/local/spark-1.6.1-bin-hadoop2.6/bin"
+
 # AWS CLI completion
 complete -C aws_completer aws
