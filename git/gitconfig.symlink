@@ -48,7 +48,7 @@
 
 
 [core]
-	excludesfile = /Users/kyle/.gitignore_global
+	excludesfile = /opt/boxen/config/git/gitignore
 
 [color]
   ui = true
@@ -91,3 +91,6 @@ protocol = https
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+
+[credential]
+helper = /opt/boxen/bin/boxen-git-credential
