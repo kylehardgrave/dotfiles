@@ -112,10 +112,6 @@ function set_bash_prompt () {
       PS1=BASH_PROMPT_STR
       ;;
   esac
-
-
-  # Set the title of the terminal window
-  # echo -ne "\033]0;${PWD}\007"
 }
 
 # Tell bash to execute this function just before displaying its prompt.
