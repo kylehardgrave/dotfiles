@@ -11,7 +11,7 @@ alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias servedir="python -m SimpleHTTPServer"
 
 # Medium-specific aliases
-alias gm="g ~/src/mono"
+alias gm="g ~/src/mono/medium2"
 
 export EDITOR=emacs
 
